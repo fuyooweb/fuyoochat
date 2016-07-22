@@ -1,0 +1,37 @@
+{
+  "name": "fuyoochat",
+  "scripts": {
+  },
+  "env": {
+    "BUILDPACK_URL": {
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "adminium",
+    "bucketeer",
+    "cleardb",
+    "logentries",
+    "memcachier",
+    "mongolab",
+    "newrelic",
+    "heroku-postgresql",
+    "rediscloud",
+    "rollbar",
+    "shocard",
+    "ssl"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/RocketChat/heroku-buildpack-meteor.git"
+    }
+  ]
+}
